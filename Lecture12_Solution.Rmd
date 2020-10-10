@@ -203,4 +203,3 @@ Result is very simple data table as you may also see in this screen shot below:
 [id-t1]: task/t1.png "Tabs"
 [id-t2]: task/t2.png "Table"
 
-

@@ -15,11 +15,12 @@ library(plyr)
 # importing data (code will be run once)
 
 # data frame containing information from multiple sensors
-DF_Data <- read_csv("DF_Data.csv")
+DF_Data <- read_csv("DF_Data.csv", col_types = "i?iii") %>% head()
 # data frame containing equipment information
-DF_Equipm <- read_csv("DF_EquipmData.csv")
+DF_Equipm <- read_csv("DF_EquipmData.csv", col_types = "ic") %>% head()
 # data frame containing Event Names
-DF_EvCode <- read_csv("DF_EvCodeData.csv")
+DF_EvCode <- read_csv("DF_EvCodeData.csv", col_type = "ic") %>% head()
+
 
 # Data manipulation and saving to the DF_TEMP
 DF_TEMP <- DF_Data %>% 

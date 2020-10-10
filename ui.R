@@ -38,7 +38,7 @@ shinyUI(fluidPage(theme = "bootstrap.css",
   
   # Page Row 2 == User Inputs ==
   
-  fluidRow(column(2, dateInput(inputId = "DateStart", label = "Insert Start Date", value = "2017-01-01")),
+  fluidRow(column(2, dateInput(inputId = "DateStart", label = "Insert Start Date", value = "2016-01-01")),
            column(2, dateInput(inputId = "DateEnd",   label = "Insert End Date")),
            column(1, checkboxInput(inputId = "cboxSE", label = "Add Stat Error?", value = FALSE, width = NULL)),
            column(1, fileInput(inputId = "myTable", label = "Upload a csv file", multiple = F, accept = 'text/csv')),
